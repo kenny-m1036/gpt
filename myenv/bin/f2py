@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/Users/kenny/Desktop/Tech0/Webアプリ/20240319 ver1.2/03_webアプリ作成/参考/3-5_GPTアプリ/myenv/bin/python3.12" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from numpy.f2py.f2py2e import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
